@@ -1,9 +1,5 @@
 //
 //  SMTabBarController.m
-//  SendMoney
-//
-//  Created by Алексей on 09.04.14.
-//  Copyright (c) 2014 ua.privatbank. All rights reserved.
 //
 
 #import "SMTabBarController.h"
@@ -77,7 +73,6 @@
         }else{
             [self checkTemplates];
             [self checkForNewRecommendations];
-//            [self.dataLoader refreshAllData:nil withLoadView:nil];
         }
     }];
 }
@@ -152,16 +147,9 @@
                     Recommendation* recomm = [Recommendation initFromJson:json];
                     [recommendations addObject:recomm];
                 }
-                
-//fix RecommPageViewController
-//                RecommPageViewController *recom = [[RecommPageViewController alloc] initWithNibName:@"RecommPageViewController" bundle:nil];
-//                recom.ownerName = [responseObject valueForKeyPath:@"fio"];
-//                recom.recommendations = recommendations;
-//                recom.isModal = YES;
-//                [self presentViewController:recom.navController animated:YES completion:nil];
             }
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
-            
+            //don't need to capture failure error
         }];
     }
 }

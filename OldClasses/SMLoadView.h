@@ -1,9 +1,5 @@
 //
 //  SMLoadView.h
-//  SendMoney
-//
-//  Created by Алексей on 15.08.14.
-//  Copyright (c) 2014 ua.privatbank. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

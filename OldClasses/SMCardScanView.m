@@ -1,9 +1,5 @@
 //
 //  SMCardScanView.m
-//  SendMoney
-//
-//  Created by Алексей on 09.09.14.
-//  Copyright (c) 2014 ua.privatbank. All rights reserved.
 //
 
 #import "SMCardScanView.h"
